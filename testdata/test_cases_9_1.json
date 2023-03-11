@@ -1,0 +1,20 @@
+{
+  "test_1":{
+    "full_name":"Vasiliy",
+    "email":"gutorov.vasia@yandex.ru",
+    "current_address":"Vitebsk",
+    "permanent_address":"Minsk"},
+
+  "test_2":{
+    "full_name":"Svetlana",
+    "email":"gutorov.svatlana@yandex.ru",
+    "current_address":"Orsha",
+    "permanent_address":"Minsk"},
+
+  "test_3":{
+    "full_name":"Maksim",
+    "email":"maksim@yandex.ru",
+    "current_address":"Mogilev",
+    "permanent_address":"Pinsk"}
+}
+
