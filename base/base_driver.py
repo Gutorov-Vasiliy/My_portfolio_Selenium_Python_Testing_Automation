@@ -73,4 +73,7 @@ class Base_Page():
         element = wait.until(EC.element_to_be_clickable((locator_type, locator))).send_keys(path)
         return element
 
+    def switch_to_window(self, window):
+        all_window = self.driver.switch_to.window(self.driver.window_handles[window])
+        return all_window
 

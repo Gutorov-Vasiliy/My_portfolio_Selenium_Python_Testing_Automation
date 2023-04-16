@@ -46,7 +46,6 @@ class Tools_Page_Upload_And_Download(Base_Page):
         self.get_button_select_a_file().click()
         #time.sleep(0.5)
 
-
     def select_file_from_pc(self):
         self.write_file_from_pc(By.XPATH, self.BUTTON_SELECT_A_FILE, "C:/Users/user/PycharmProjects/Test_Site/testdata/photo.jpeg")
 
