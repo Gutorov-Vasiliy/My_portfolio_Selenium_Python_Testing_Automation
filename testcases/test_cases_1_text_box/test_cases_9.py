@@ -1,3 +1,4 @@
+import allure
 import pytest
 import softest
 
@@ -17,7 +18,8 @@ class Test_Base_Page(softest.TestCase):
         self.tl = Tools_Page_Text_Box(self.driver)
         self.ut = Utils()
 
-    def test_launch(self):
+
+    def test_cases_9(self):
         self.bd.scroll_page_to_down_page()
         self.lp.click_to_button_elements()
         self.tl.click_to_button_tag_text_box()

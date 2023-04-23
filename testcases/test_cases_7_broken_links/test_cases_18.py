@@ -1,4 +1,6 @@
 import time
+
+import allure
 import pytest
 import softest
 from base.base_driver import Base_Page
@@ -19,7 +21,8 @@ class Test_Base_Page(softest.TestCase):
         self.tpl = Tools_Page_Links(self.driver)
         self.tpbl = Tools_Page_Broken_links(self.driver)
 
-    def test_links(self):
+
+    def test_cases_18(self):
         self.bd.scroll_page_to_down_page()
         self.lp.click_to_button_elements()
         self.bd.scroll_page_to_down_page()

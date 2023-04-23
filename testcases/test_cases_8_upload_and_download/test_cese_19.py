@@ -1,4 +1,6 @@
 import time
+
+import allure
 import pytest
 import softest
 from base.base_driver import Base_Page
@@ -22,7 +24,7 @@ class Test_Base_Page(softest.TestCase):
         self.tpuad = Tools_Page_Upload_And_Download(self.driver)
 
 
-    def test_links(self):
+    def test_cases_19(self):
         self.bd.scroll_page_to_down_page()
         self.lp.click_to_button_elements()
         self.bd.scroll_page_to_down_page()

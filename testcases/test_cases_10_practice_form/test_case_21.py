@@ -17,10 +17,8 @@ class Test_Base_Page(softest.TestCase):
         self.lp = Launch_Page(self.driver)
         self.tppf = Tools_Page_Practice_Form(self.driver)
 
-    @allure.title("test_cases_21")
-    @allure.feature("test")
-    @allure.story("Открываем страницу yahoo")
-    def test_links(self):
+    @allure.title("test_case_21/Person form")
+    def test_cases_21(self):
         self.bd.scroll_page_to_down_page()
         self.lp.click_to_button_elements()
         self.bd.scroll_page_to_down_page()

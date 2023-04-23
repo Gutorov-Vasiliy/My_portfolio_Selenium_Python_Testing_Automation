@@ -1,4 +1,6 @@
 import time
+
+import allure
 import pytest
 import softest
 from base.base_driver import Base_Page
@@ -8,7 +10,6 @@ from pages.tools_page_web_tables import Tools_Page_Web_Tables
 
 
 @pytest.mark.usefixtures("setup")
-
 class Test_Base_Page(softest.TestCase):
 
     @pytest.fixture(autouse=True)
@@ -17,7 +18,8 @@ class Test_Base_Page(softest.TestCase):
         self.lp = Launch_Page(self.driver)
         self.tpwt = Tools_Page_Web_Tables(self.driver)
 
-    def test_loading(self):
+
+    def test_cases_15(self):
         self.bd.scroll_page_to_down_page()
         self.lp.click_to_button_elements()
         self.tpwt.click_to_button_tab_web_tables()

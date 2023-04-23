@@ -1,3 +1,4 @@
+import allure
 import pytest
 import softest
 from ddt import ddt, data, unpack
@@ -20,10 +21,9 @@ class Test_Base_Page(softest.TestCase):
         self.ut = Utils()
 
 
-
     @data(*Utils.read_data_from_excel("C:\\Users\\user\\PycharmProjects\\Test_Site\\testdata\\test_cases_9_2.xlsx", "Sheet1"))
     @unpack
-    def test_launch(self, full_name, email, current_address, permanent_address):
+    def test_cases_11(self, full_name, email, current_address, permanent_address):
         self.bd.scroll_page_to_down_page()
         self.lp.click_to_button_elements()
         self.tl.click_to_button_tag_text_box()

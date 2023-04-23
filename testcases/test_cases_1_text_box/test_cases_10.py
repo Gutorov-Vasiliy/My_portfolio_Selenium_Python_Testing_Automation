@@ -1,3 +1,4 @@
+import allure
 import pytest
 import softest
 from ddt import ddt, unpack, file_data
@@ -18,10 +19,11 @@ class Test_Base_Page(softest.TestCase):
         self.tl = Tools_Page_Text_Box(self.driver)
         self.ut = Utils()
 
-
+    @allure.link('https://demoqa.com/text-box', name='Click me')
+    @allure.title("test_case_10")
     @file_data("C:\\Users\\user\\PycharmProjects\\Test_Site\\testdata\\test_cases_9_1.json")
     @unpack
-    def test_launch(self, full_name, email, current_address, permanent_address):
+    def test_cases_10(self, full_name, email, current_address, permanent_address):
         self.bd.scroll_page_to_down_page()
         self.lp.click_to_button_elements()
         self.tl.click_to_button_tag_text_box()
@@ -31,7 +33,7 @@ class Test_Base_Page(softest.TestCase):
 
         # Проверка имени зарегистрированного пользователя
         all_results_registration_name = self.tl.get_result_registration_name()
-        self.ut.assert_result_registration(all_results_registration_name, "Name:"+full_name)
+        self.ut.assert_result_registration(all_results_registration_name, "Name:"+ full_name)
 
         # Проверка емаил зарегистрированного пользователя
         all_results_registration_email = self.tl.get_result_registration_email()

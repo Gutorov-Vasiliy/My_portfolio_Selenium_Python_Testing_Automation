@@ -1,3 +1,4 @@
+import allure
 import pytest
 import softest
 from pages.laungh_page import Launch_Page
@@ -11,7 +12,8 @@ class Test_Base_Page(softest.TestCase):
     def class_setup(self):
         self.lp = Launch_Page(self.driver)
 
-    def test_launch(self):
+
+    def test_cases_1(self):
         self.lp.click_to_button_tools_qa()
 
 
